@@ -5,8 +5,47 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DVDbolt"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow" Height="350" Width="500" Background="Black" Foreground="White">
 
-    </Grid>
+    <DockPanel Background="black">
+        <StackPanel Height="30" DockPanel.Dock="Top">
+            <TextBlock
+            FontWeight="ExtraBold"
+            FontSize="20"
+            Foreground="Black"
+            Text="DVD Shop"
+            Background="White"
+            TextAlignment="Center"
+            />
+        </StackPanel>
+        <StackPanel
+        Width="100"
+        Background="Black"
+        DockPanel.Dock="Left">
+            <ListView>
+                <ListViewItem
+                x:Name="customerMenu"
+                Content="Vevők"
+                MouseLeftButtonUp="customerMenu_MouseLeftButtonUp" />
+                
+                <ListViewItem
+                x:Name="userMenu"
+                Content="Felhasználók"
+                MouseLeftButtonUp="userMenu_MouseLeftButtonUp"/>
+                
+                <ListViewItem
+                x:Name="productMenu"
+                Content="Termékek"
+                MouseLeftButtonUp="productMenu_MouseLeftButtonUp"/>
+               
+                <ListViewItem
+                x:Name="kilepesMenu"
+                Background="Red"
+                Content="Bezárás"
+                Foreground="White"
+                MouseLeftButtonUp="kilepesMenu_MouseLeftButtonUp"/>
+            </ListView>
+        </StackPanel>
+        <StackPanel x:Name="feladatPanel" DockPanel.Dock="Right" />
+    </DockPanel>
 </Window>

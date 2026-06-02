@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DVDbolt")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f5c68012822d8eebeb03ddfd7d7584c4b333ab90")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+827b08a93d68fdf181baa8ddb2b1f129464d07cb")]
 [assembly: System.Reflection.AssemblyProductAttribute("DVDbolt")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DVDbolt")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
