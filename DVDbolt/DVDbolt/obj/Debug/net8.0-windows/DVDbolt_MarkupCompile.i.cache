@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
 D:\_njt\DVDbolt\DVDbolt\DVDbolt\App.xaml
-11407045341
+4-787911949
 
 11-172336644
 202-1048319178
-MainWindow.xaml;
+MainWindow.xaml;UserControls\CustomerUserControl.xaml;UserControls\ProductUserControl.xaml;UserControls\UserUserControl.xaml;
 
-True
+False
 

@@ -8,6 +8,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using DVDbolt.UserControls;
+using System.Windows;
+using System.Windows.Input;
 
 namespace DVDbolt
 {
@@ -23,22 +26,25 @@ namespace DVDbolt
 
         private void customerMenu_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-
+            feladatPanel.Children.Clear();
+            feladatPanel.Children.Add(new UserControls.CustomerUserControl());
         }
 
         private void userMenu_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-
+            feladatPanel.Children.Clear();
+            feladatPanel.Children.Add(new UserControls.UserUserControl());
         }
 
         private void productMenu_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-
+            feladatPanel.Children.Clear();
+            feladatPanel.Children.Add(new UserControls.ProductUserControl());
         }
 
         private void kilepesMenu_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-
+            App.Current.Shutdown();
         }
     }
 }
