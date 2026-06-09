@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "F2S0lKmt+V0=",
+  "dgSpecHash": "6wm1s2AgqO0=",
   "success": true,
-  "projectFilePath": "D:\\_njt\\DVDbolt\\DVDbolt\\DVDbolt\\DVDbolt.csproj",
+  "projectFilePath": "D:\\njt\\DVDbolt\\DVDbolt\\DVDbolt\\DVDbolt.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nagyhazijanostamas\\.nuget\\packages\\sqlite-net-pcl\\1.9.172\\sqlite-net-pcl.1.9.172.nupkg.sha512",
     "C:\\Users\\nagyhazijanostamas\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.1.2\\sqlitepclraw.bundle_green.2.1.2.nupkg.sha512",

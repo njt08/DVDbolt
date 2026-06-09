@@ -307,11 +307,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\_njt\\DVDbolt\\DVDbolt\\DVDbolt\\DVDbolt.csproj",
+      "projectUniqueName": "D:\\njt\\DVDbolt\\DVDbolt\\DVDbolt\\DVDbolt.csproj",
       "projectName": "DVDbolt",
-      "projectPath": "D:\\_njt\\DVDbolt\\DVDbolt\\DVDbolt\\DVDbolt.csproj",
+      "projectPath": "D:\\njt\\DVDbolt\\DVDbolt\\DVDbolt\\DVDbolt.csproj",
       "packagesPath": "C:\\Users\\nagyhazijanostamas\\.nuget\\packages\\",
-      "outputPath": "D:\\_njt\\DVDbolt\\DVDbolt\\DVDbolt\\obj\\",
+      "outputPath": "D:\\njt\\DVDbolt\\DVDbolt\\DVDbolt\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -344,7 +344,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net8.0-windows7.0": {
@@ -374,7 +374,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

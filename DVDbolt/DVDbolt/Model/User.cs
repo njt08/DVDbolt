@@ -13,13 +13,27 @@ namespace DVDbolt.Model
 
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
-        public string Username { get; set; }
-        public string Password { get; set; }
+        public string FelhasznaloNev { get; set; }
+        public string TeljesNev { get; set; }
+        public string Jelszo { get; set; }
+        public int Szerepkor { get; set; }
 
-        public User(string username, string password)
+
+        public string SzerepkorNev => Enum.GetName(typeof(Szerepkor), Szerepkor) ?? "Ismeretlen";
+
+        public User(string felhasznaloNev, string teljesNev, int szerepkor)
         {
-            Username = username;
-            Password = password;
+            FelhasznaloNev = felhasznaloNev;
+            TeljesNev = teljesNev;
+            Szerepkor = szerepkor;
+        }
+
+        public User(string felhasznaloNev, string teljesNev, string jelszo, int szerepkor)
+        {
+            FelhasznaloNev = felhasznaloNev;
+            TeljesNev = teljesNev;
+            Jelszo = jelszo;
+            Szerepkor = szerepkor;
         }
     }
 }

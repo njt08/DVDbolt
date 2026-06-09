@@ -1,42 +1,40 @@
-<UserControl x:Class="DVDbolt.UserControls.ProductUserControl"
+ï»¿<UserControl x:Class="DVDbolt.UserControls.UserControlUser"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DVDbolt.UserControls"
              mc:Ignorable="d" 
-                          d:DesignHeight="530" d:DesignWidth="500">
+             d:DesignHeight="570" d:DesignWidth="500">
     <StackPanel>
         <DataGrid
-        x:Name="datagridFelhasznalok"
-        Background="Black"
+        x:Name="datagridfelhasznalok"
         Width="500"
         Height="350"
         AutoGenerateColumns="False"
         CanUserAddRows="False"
         CanUserDeleteRows="False"
         IsReadOnly="True"
-        SelectionChanged="datagridFelhasznalok_SelectionChanged">
+        SelectionChanged="datagridfelhasznalok_SelectionChanged_1">
             <DataGrid.Columns>
-                <DataGridTextColumn Binding="{Binding Id}" Header="ID" />
-                <DataGridTextColumn Binding="{Binding FelhasznaloNev}" Header="Felh.név:" />
-                <DataGridTextColumn Binding="{Binding Jelszo}" Header="Jelszó:" />
-
-                <DataGridTextColumn Binding="{Binding TeljesNev}" Header="Teljes név:" />
-                <DataGridTextColumn Binding="{Binding Szerepkor}" Header="Szerepkör Id:" />
-                <DataGridTextColumn Binding="{Binding SzerepkorNev}" Header="Szerepkör név:" />
+                <DataGridTextColumn Binding="{Binding ID}" Header="ID" />
+                <DataGridTextColumn Binding="{Binding FelhasznaloNev}" Header="FelhasznÃ¡lÃ³nÃ©v" />
+                <DataGridTextColumn Binding="{Binding Jelszo}" Header="Jelszo" />
+                <DataGridTextColumn Binding="{Binding TeljesNev}" Header="TeljesnÃ©v" />
+                <DataGridTextColumn Binding="{Binding Szerepkor}" Header="SzerepkÃ¶r id" />
+                <DataGridTextColumn Binding="{Binding SzerepkorNev}" Header="SzerepkÃ¶r nÃ©v" />
             </DataGrid.Columns>
+
         </DataGrid>
         <WrapPanel Margin="130,10,130,0">
             <StackPanel Width="300" Background="LightGray">
-                <TextBlock>Felhasználónév:</TextBlock>
+                <TextBlock>FelhasznÃ¡lÃ³nÃ©v:</TextBlock>
                 <TextBox x:Name="felhasznalonevText" />
-                <TextBlock>
-                Teljes név:
-                </TextBlock>
+                <TextBlock>Teljes nÃ©v:</TextBlock>
                 <TextBox x:Name="teljesnevText" />
-                <TextBlock>Jelszó:</TextBlock>
+                <TextBlock>JelszÃ³:</TextBlock>
                 <PasswordBox x:Name="jelszoText" />
-                <TextBlock>Szerepkör</TextBlock>
+                <TextBlock>SzerepkÃ¶r</TextBlock>
                 <ComboBox x:Name="szerepkorComboBox" />
             </StackPanel>
             <StackPanel>
@@ -45,7 +43,7 @@
                 Width="200"
                 Background="Green"
                 Click="mentesBtn_Click"
-                Content="Mentés"
+                Content="MentÃ©s"
                 Foreground="White"
                 Visibility="Visible" />
                 <Button
@@ -53,7 +51,7 @@
                 Width="200"
                 Background="Red"
                 Click="torlesBtn_Click"
-                Content="Törlés"
+                Content="TÃ¶rlÃ©s"
                 Foreground="White"
                 Visibility="Hidden" />
                 <Button
@@ -61,7 +59,8 @@
                 Width="200"
                 Background="Yellow"
                 Click="modBtn_Click"
-                Content="Módosítás"
+                Content="MÃ³dostÃ¡s"
+                Foreground="White"
                 Visibility="Hidden" />
             </StackPanel>
         </WrapPanel>

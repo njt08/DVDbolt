@@ -27,19 +27,19 @@ namespace DVDbolt
         private void customerMenu_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
             feladatPanel.Children.Clear();
-            feladatPanel.Children.Add(new UserControls.CustomerUserControl());
+            feladatPanel.Children.Add(new UserControls.UserControlCustomer());
         }
 
         private void userMenu_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
             feladatPanel.Children.Clear();
-            feladatPanel.Children.Add(new UserControls.UserUserControl());
+            feladatPanel.Children.Add(new UserControls.UserControlUser());
         }
 
         private void productMenu_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
             feladatPanel.Children.Clear();
-            feladatPanel.Children.Add(new UserControls.ProductUserControl());
+            feladatPanel.Children.Add(new UserControls.UserControlProduct());
         }
 
         private void kilepesMenu_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)

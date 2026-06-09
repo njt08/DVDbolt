@@ -1,0 +1,68 @@
+﻿<Window x:Class="DVDbolt.UserLogin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DVDbolt"
+        Title="UserLogin"
+        Width="300"
+        Height="450"
+        FontSize="20"
+        Background="Black"
+        Foreground="White"
+        WindowStartupLocation="CenterScreen"
+        mc:Ignorable="d">
+    <StackPanel Margin="20">
+        <TextBlock
+        HorizontalAlignment="Center"
+        VerticalAlignment="Top"
+        FontSize="23"
+        FontWeight="Bold"
+        Text="DVD bolt bejelentkezés" 
+        Margin="0 0 0 50"    />
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <TextBlock
+            Grid.Row="0"
+            HorizontalAlignment="Left"
+            Text="Felhasználónév" />
+            <TextBox
+            x:Name="loginUserTxt"
+            Grid.Row="1"
+            Width="250"
+            HorizontalAlignment="Left" />
+            <TextBlock
+            Grid.Row="2"
+            HorizontalAlignment="Left"
+            Text="Jelszó:" />
+            <PasswordBox
+            x:Name="loginPasswordText"
+            Grid.Row="3"
+            Width="250"
+            HorizontalAlignment="Left" />
+        </Grid>
+        <TextBlock
+        HorizontalAlignment="Right"
+        FontSize="14"
+        FontStyle="Italic"
+        Foreground="DarkGray"
+        Text="Elfelejtett jelszó" />
+        <Button
+        x:Name="loginBtn"
+        Width="160"
+        Height="35"
+        Margin="0,50,0,0"
+        Background="White"
+        Click="loginBtn_Click"
+        Content="Bejelentkezés"
+        Foreground="Black"
+            FontWeight="ExtraBold"/>
+    </StackPanel>
+</Window>
